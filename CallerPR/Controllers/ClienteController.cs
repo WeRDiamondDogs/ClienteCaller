@@ -33,7 +33,7 @@ namespace CallerPR.Controllers
 
         [ActionName("CrearCliente")]
         [HttpPost]
-        public IActionResult CrearCliente([FromBody]dynamic obj)
+        public IActionResult CrearCliente([FromBody]DataCliente obj)
         {
             try
             {
