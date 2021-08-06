@@ -39,7 +39,7 @@ namespace CallerPR.Controllers
             {
                 string nombre = obj.Nombres;
                 string apellidos = obj.Apellidos;
-                string fechaNacimiento = obj.FechaNacimiento;
+                string fechaNacimiento = obj.FechaNacimiento;//yyyy-mm-dd
                 DataTable dt = Instancia._crearCliente(nombre,apellidos,fechaNacimiento);
                 return Ok(JsonConvert.SerializeObject(dt));
             }
