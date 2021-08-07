@@ -18,6 +18,13 @@ namespace CallerPR.Models
             get { return ClienteModel._instacia; }
         }
 
+        public class DataCliente
+        {
+            public string Nombres { get; set; }
+            public string Apellidos { get; set; }
+            public string FechaNacimiento { get; set; }
+        }
+
 
         public DataTable _listarClientes()
         {
